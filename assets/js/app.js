@@ -577,18 +577,19 @@ const winOrLoss = () => {
         //Update the dom to tell user to hit the reset button 
         const domUpdateDiv = document.querySelector("#dom-update");
         domUpdateDiv.innerHTML = "Click the RESET button to play again"
-       
+
         //console.log(event);
     }
 
     if (choosenWord.getEndGame === true && choosenWord.getLives === 0) {
         losses++;
-        alert("You did not win, loser!");
+        alert(`You did not win, loser! The correct word is ${choosenWord.word}`);
         document.querySelector(".loss-score").innerHTML = losses;
         disableGame();
 
     } //end of if - this will let users know if they lost 
     else if (choosenWord.getEndGame === true) {
+        console.log(choosenWord.correctLetterIndex);
         wins++;
         alert("You win!");
         document.querySelector(".win-score").innerHTML = wins;
@@ -604,7 +605,6 @@ const getClickLetter = () => {
 
     console.log("hi YOU HI ");
     console.log(choosenWord);
-
     let clickedLetter; //get letter clicked
     abcTileDiv.addEventListener('click', function (event) {
         console.log("clicked")
@@ -612,7 +612,7 @@ const getClickLetter = () => {
         clickedLetter = event.target.dataset.letter;
         const setGuess = choosenWord.setGuess(clickedLetter);
         console.log(setGuess);
-        choosenWord.alreadyGuessCheck() //mouse object location in array
+        choosenWord.alreadyGuessCheck(); //mouse object location in array
         winOrLoss(); //check if game is over 
     }); //end of click listner 
 
