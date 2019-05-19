@@ -8,7 +8,7 @@ const getClue = async () => {
     console.log(movie);
 
     let clue = document.getElementById('clue-ppl');
-    const urlToFetch = "http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=40e9cece";
+    const urlToFetch = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=40e9cece";
     //console.log(urlToFetch)
     try {
         const response = await fetch(urlToFetch);
