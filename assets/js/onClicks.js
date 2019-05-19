@@ -1,4 +1,4 @@
-
+let resultsClue;
 const getClue = async () => {
     // choosenWord;
     console.log(choosenWord._word);

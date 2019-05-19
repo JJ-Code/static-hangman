@@ -636,12 +636,12 @@ const clearDivs = () => {
     const wrongDivClear = document.getElementById('wrong-tiles');
     const abcDivClear = document.getElementById('abc-tiles');
     const guessDivClear = document.getElementById('word-to-guess')
-    //const clue = document.getElementById('clue-plot');
+    const clue = document.getElementById('clue-ppl');
     const timerId = document.getElementById('timer');
     wrongDivClear.innerHTML = "";
     abcDivClear.innerHTML = "";
     guessDivClear.innerHTML = "";
-    //clue.innerHTML = "";
+    clue.innerHTML = "";
     timerId.innerHTML = "";
 };
 
