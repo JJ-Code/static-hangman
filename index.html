@@ -18,74 +18,74 @@
 
 <body>
 
-<div class="landing--container">
-  <div class="landing--title">
+  <div class="landing--container">
+    <div class="landing--title">
 
-    <h1>Movie Scrabble Hangman!</h1>
-    <p>Click a letter</p><br />
-    <div id="clue">
-      <button id="get-clue" class="primary-btn" onclick="getClue()" type="button">Get Clue</button>
-      <div id="got-clue">
-        <h3> <span id="clue-ppl"> </span> </h3>
-      </div>
-      <!-- <h2>Clue: <span class="clue"> </span> </h2> -->
-    </div>
-
-    <div class="row">
-
-      <div class="col-md-4">
-        <h2>Number of Lives: <span class="lives-score"> </span> </h2>
+      <h1>Movie Scrabble Hangman!</h1>
+      <p>Click a letter</p><br />
+      <div id="clue">
+        <button id="get-clue" class="primary-btn" onclick="getClue()" type="button">Get Clue</button>
+        <div id="got-clue">
+          <h3> <span id="clue-ppl"> </span> </h3>
+        </div>
+        <!-- <h2>Clue: <span class="clue"> </span> </h2> -->
       </div>
 
-      <div class="col-md-4">
-        <h2>Timer: <span class="timer" id="timer"> </span> </h2>
+      <div class="row">
+
+        <div class="col-md-4">
+          <h2>Number of Lives: <span class="lives-score"> </span> </h2>
+        </div>
+
+        <div class="col-md-4">
+          <h2>Timer: <span class="timer" id="timer"> </span> </h2>
+        </div>
+
+
+        <div class="col-md-4">
+          <!-- <h2>Score Tracker</h2> -->
+          <h2>Wins: <span class="win-score"> </span></h2>
+          <h2>Losses: <span class="loss-score"></h2>
+        </div>
+
+
+
+      </div>
+      <!-- end of row -->
+
+
+
+
+      <div id="game-area">
+
+        <!-- ------------------- -->
+        <!-- create space for blank letters -->
+        <div id="word-to-guess"></div>
+
+        <br /><br />
+        <div class="landing--line"> </div>
+        <!-- this is to create clicking board -->
+
+        <h2 id="dom-update"></h2>
+        <button id="reset-game" class="primary-btn" onclick="reset()" type="button">Reset Game</button>
+        <div id="abc-tiles"></div>
+
+        <div class="landing--line"> </div>
+        <br /> <br />
+        <!-- this is to where the wrong tiles will go-->
+        <div id="wrong-tiles"></div>
+
       </div>
 
+    </div> <!-- end of landing--title -->
 
-      <div class="col-md-4">
-        <!-- <h2>Score Tracker</h2> -->
-        <h2>Wins: <span class="win-score"> </span></h2>
-        <h2>Losses: <span class="loss-score"></h2>
-      </div>
-
-
-
-    </div>
-    <!-- end of row -->
-
-
-
-
-    <div id="game-area">
-
-      <!-- ------------------- -->
-      <!-- create space for blank letters -->
-      <div id="word-to-guess"></div>
-
-      <br /><br />
-      <div class="landing--line"> </div>
-      <!-- this is to create clicking board -->
-
-      <h2 id="dom-update"></h2>
-      <button id="reset-game" class="primary-btn" onclick="reset()" type="button">Reset Game</button>
-      <div id="abc-tiles"></div>
-
-      <div class="landing--line"> </div>
-      <br /> <br />
-      <!-- this is to where the wrong tiles will go-->
-      <div id="wrong-tiles"></div>
-
-    </div>
-
-  </div> <!-- end of landing--title -->
-
-</div> <!-- end of landing--container -->
+  </div> <!-- end of landing--container -->
 
   <!-- This is the footer -->
   <footer>
     <div class="footer--bottom">
-      <p class="footer--text">©copyright JJCode | All rights reserved | &amp; development by <a href="#"
-          target="_blank"> JJCode</a></p>
+      <p class="footer--text">©copyright JJCode | All rights reserved | &amp; development by <a
+          href="https://github.com/JJ-Code" target="_blank"> JJCode</a></p>
     </div>
   </footer>
 
